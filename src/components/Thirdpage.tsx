@@ -5,7 +5,7 @@ export default function Thirdpage() {
     <div className="thirdpage">
       <h1>ABOUT US</h1>
       <div className="container">
-        <img src={ArtisanalBrand} alt="Artisanal perfume background" loading="lazy" />
+        <img src={ArtisanalBrand} alt="Artisanal perfume background" />
         <div className="content">
           <h2>
             <span>NOTHING</span>,
