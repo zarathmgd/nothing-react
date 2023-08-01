@@ -8,7 +8,7 @@ export default function Fourthpage() {
 
   return (
     <div className="fourthpage">
-      <h1>SHOP</h1>
+      <h1 id="products">SHOP</h1>
       <div className="banner">
         <img src={Plant} alt="plant" />
         <img src={Plant} alt="plant" />

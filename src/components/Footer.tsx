@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <h1>NOTHING</h1>
+        <h1 id="contact">NOTHING</h1>
         <div className="section-container">
           <div className="our-company">
             <h4>Our company</h4>

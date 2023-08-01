@@ -3,7 +3,7 @@ import ArtisanalBrand from "../assets/artisanal-perfume-bg.jpg";
 export default function Thirdpage() {
   return (
     <div className="thirdpage">
-      <h1>ABOUT US</h1>
+      <h1 id="about">ABOUT US</h1>
       <div className="container">
         <img src={ArtisanalBrand} alt="Artisanal perfume background" />
         <div className="content">

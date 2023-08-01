@@ -18,13 +18,13 @@ export default function Firstpage() {
         <h1>NOTHING</h1>
         <ul>
           <li>
-            <a href="">Products</a>
+            <a href="#products">Products</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <div className="navbar-buttons">
