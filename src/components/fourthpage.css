@@ -1,0 +1,105 @@
+.fourthpage {
+  position: relative;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourthpage h1 {
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 2.8vw;
+}
+
+.banner {
+  width: 100%;
+  height: 10vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 2%;
+  background: var(--darkgreenFifty);
+}
+
+.fourthpage .banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-container {
+  width: 90%;
+  position: relative;
+  top: 10%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 22%);
+  gap: 5vmin;
+}
+
+.card {
+  width: 20vw;
+  height: 28vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  gap: 2%;
+  background: var(--darkgreen);
+}
+
+.bottle-plant-container {
+  width: 100%;
+  height: 60%;
+  padding-top: 1.5vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(13, 45, 42, 1);
+  border: 1px solid var(--aquagreen);
+  overflow: hidden;
+}
+
+.bottle-plant-container > img {
+  position: absolute;
+  width: 25vw;
+  height: 17vw;
+}
+
+.card h4 {
+  margin-top: 5%;
+  color: var(--aquagreen);
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+.card-container p {
+  font-size: 0.9vw;
+  font-weight: 200;
+}
+
+.card-container p strong {
+  font-weight: 400;
+}
+
+.card button {
+  padding: 0.4vw 1.5vw;
+  position: absolute;
+  bottom: 4.5%;
+  right: 7%;
+  font-size: 1vw;
+  background: transparent;
+  border: 1px solid var(--aquagreen);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.card button:hover {
+  background: rgba(3, 78, 73, 1);
+}

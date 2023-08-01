@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
+
+:root {
+  --aqua: rgba(0, 255, 240, 1);
+  --green: rgba(0, 255, 71, 1);
+  --aquagreen: rgba(1, 255, 195, 1);
+  --aquagreenForty: rgba(1, 255, 195, 0.4);
+  --darkgreen: rgba(3, 20, 18, 1);
+  --darkgreenFifty: rgba(3, 20, 18, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  word-spacing: 0.2vw;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, rgba(3, 20, 15, 1), rgba(3, 68, 63, 1), rgba(3, 20, 15, 1));
+  overflow-x: hidden;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+}
+
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.firstpage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 95vw;
+  padding: 3vmin 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5vw;
+  color: transparent;
+  background: linear-gradient(to right, var(--aqua), var(--green));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+nav ul {
+  width: 20vmin;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 5vw;
+}
+
+nav li {
+  font-size: 1.3vw;
+  font-weight: 200;
+}
+
+nav li a:hover {
+  color: var(--aquagreen);
+}
+
+nav .navbar-buttons {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.navbar-buttons button {
+  background: none;
+  border: 1px solid var(--aquagreen);
+  border-radius: 20px;
+  padding: 0.5vw 1.5vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.navbar-buttons button:hover {
+  background: rgba(3, 78, 73, 1);
+}
+
+.navbar-buttons i {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.navbar-buttons i:hover {
+  color: var(--aquagreen);
+}
+
+.firstpage hr {
+  width: 95vw;
+  border: 1px solid var(--aquagreen);
+}
+
+.firstpage-content {
+  position: relative;
+  top: 3vmin;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstpage-content h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2vw;
+  font-weight: 100;
+  text-align: center;
+}
+
+.firstpage-content h2 span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4vw;
+  font-weight: 600;
+  color: transparent;
+  background: linear-gradient(to right, var(--aqua), var(--green));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.firstpage-informations {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  z-index: 10;
+}
+
+.firstpage-informations p {
+  font-size: 1.4vw;
+}
+
+.firstpage-informations p span {
+  color: var(--aquagreen);
+}
+
+.firstpage-informations .informations-number {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+.firstpage .main-content {
+  width: 100%;
+  height: 65vmin;
+  position: relative;
+  top: 5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstpage .main-content .perfume-bottle {
+  width: 40vmin;
+  position: absolute;
+  z-index: 1;
+}
+
+.firstpage .main-content img {
+  width: 85vmin;
+  position: relative;
+  top: 2.5vmin;
+  z-index: -1;
+}
+
+.firstpage .main-content .circle {
+  position: absolute;
+  bottom: 8vmin;
+  width: 55vmin;
+  height: 55vmin;
+  border: 3px solid rgba(1, 255, 164, 1);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1367px) {
+  nav h1 {
+    font-size: 3.5vw;
+  }
+
+  nav li,
+  .navbar-buttons {
+    font-size: 2vw;
+  }
+
+  .navbar-buttons button {
+    font-size: 1.5vw;
+  }
+
+  .navbar-buttons i {
+    font-size: 2.5vw;
+  }
+
+  .secondpage .container {
+    gap: 1vmin 10vmin !important;
+  }
+
+  .perfume .perfume-informations h6 {
+    font-size: 1.8vw;
+  }
+
+  .perfume .perfume-informations p {
+    font-size: 1.3vw !important;
+  }
+
+  .thirdpage .container .content {
+    width: 60%;
+    padding: 2vw !important;
+  }
+
+  .thirdpage .container .content h2 span {
+    font-size: 3vw !important;
+  }
+
+  .thirdpage .container .content p {
+    margin-top: 1vw !important;
+  }
+
+  .thirdpage .container .content h2,
+  .thirdpage .container .content p {
+    font-size: 1.1vw !important;
+  }
+
+  .card h4 {
+    font-size: 1.5vw !important;
+  }
+
+  .card-container p {
+    font-size: 1vw !important;
+  }
+
+  .section-container div {
+    gap: 0.8vw !important;
+  }
+
+  .section-container div h4 {
+    font-size: 1.5vw !important;
+  }
+
+  .section-container div li,
+  .section-container div p,
+  .footer-container p {
+    font-size: 1.2vw !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 3.5vw !important;
+  }
+
+  nav h1 {
+    font-size: 4vw !important;
+  }
+
+  nav li,
+  .navbar-buttons {
+    font-size: 2.3vw !important;
+  }
+
+  .navbar-buttons button {
+    font-size: 1.8vw !important;
+  }
+
+  .navbar-buttons i {
+    font-size: 2.8vw !important;
+  }
+
+  .firstpage-content h2 {
+    font-size: 3vw !important;
+  }
+
+  .firstpage-content h2 span {
+    font-size: 5.5vw !important;
+  }
+
+  .firstpage-informations p {
+    font-size: 2vw !important;
+  }
+
+  .firstpage-informations p span {
+    font-size: 3vw !important;
+  }
+
+  .firstpage-informations .informations-number {
+    font-size: 6vw !important;
+  }
+
+  .secondpage .container {
+    grid-template-columns: repeat(1, 80vw) !important;
+    grid-template-rows: repeat(4, 25%) !important;
+  }
+
+  .secondpage .perfume h6 {
+    font-size: 3vw !important;
+  }
+
+  .secondpage .perfume p {
+    font-size: 2vw !important;
+  }
+
+  .thirdpage .container {
+    margin-top: 0 !important;
+    flex-direction: column !important;
+  }
+
+  .thirdpage img {
+    width: 55vw !important;
+  }
+
+  .thirdpage .container .content {
+    width: auto;
+    position: relative !important;
+    right: inherit !important;
+  }
+
+  .thirdpage .container .content h2,
+  .thirdpage .container .content p,
+  .thirdpage .container .content p span {
+    font-size: 2vw !important;
+  }
+
+  .fourthpage .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 3%;
+    grid-template-columns: repeat(1, 88%) !important;
+    grid-template-rows: repeat(4, 22%) !important;
+  }
+
+  .card {
+    width: 80% !important;
+    flex-direction: row !important;
+    padding: 2vw !important;
+  }
+
+  .card .bottle-plant-container {
+    width: 40%;
+    height: 100%;
+  }
+
+  .card .bottle-plant-container > img {
+    width: 35vw;
+    height: 25vw;
+  }
+
+  .card h4 {
+    position: absolute;
+    left: 56%;
+    top: 5%;
+    margin-top: 0% !important;
+    font-size: 3vw !important;
+  }
+
+  .card-informations {
+    position: relative;
+    left: 5%;
+  }
+
+  .card-informations p {
+    font-size: 2vw !important;
+  }
+
+  .card button {
+    bottom: 8% !important;
+    left: 55%;
+    right: inherit !important;
+    padding: 1vw 5vw !important;
+    font-size: 2vw !important;
+  }
+
+  .section-container div h4 {
+    font-size: 2.3vw !important;
+  }
+
+  .section-container div li,
+  .section-container div p,
+  .footer-container p {
+    font-size: 1.7vw !important;
+  }
+
+  .payment-methods img {
+    width: 3.8vw !important;
+  }
+
+  .social-medias {
+    flex-direction: column !important;
+  }
+
+  .social-medias i {
+    font-size: 3vw !important;
+  }
+}

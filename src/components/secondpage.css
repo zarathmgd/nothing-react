@@ -1,0 +1,72 @@
+:root {
+  --aqua: rgba(0, 255, 240, 1);
+  --green: rgba(0, 255, 71, 1);
+  --aquagreen: rgba(1, 255, 195, 1);
+}
+
+.secondpage {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondpage h1 {
+  position: relative;
+  top: -2%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 2.8vw;
+}
+
+.secondpage .container {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 40vw);
+  grid-template-rows: repeat(2, 50%);
+  gap: 5vmin 15vmin;
+  margin-top: 5%;
+}
+
+.perfume {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.perfume img {
+  width: 25vmin;
+  height: 35vmin;
+}
+
+.perfume-informations {
+  width: 45vmin;
+  height: 18vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.perfume h6 {
+  color: var(--aquagreen);
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+.perfume p {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+.perfume .perfume-notes {
+  font-weight: 100;
+}
